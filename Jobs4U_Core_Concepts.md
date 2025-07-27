@@ -1,15 +1,15 @@
 
-# Jobs4U Project - Core Concepts Breakdown
+# Jobs4U Project 
 
 ---
 
 ## 1. User
 
-| Context                         | Important Fields                                      |
+| Context                          | Important Fields                                      |
 |----------------------------------|-------------------------------------------------------|
-| WordPress user system            | ID, user_login, user_email, user_pass, user_registered |
-| Job application linkage          | userId (in `job4U_apply`), name, email, contact       |
-| Commenting and interaction       | user_id (in `job4U_comments`), user roles, display_name |
+|  user system                     | ID, user_login, user_email, user_pass, user_registered |
+| Job application linkage          | userId , name, email, contact       |
+| Commenting and interaction       | user_id, user roles, display_name |
 
 ---
 
@@ -17,9 +17,9 @@
 
 | Context                          | Important Fields                                                     |
 |----------------------------------|----------------------------------------------------------------------|
-| Job listings (stored as posts)   | ID (post ID), post_title, post_content, post_date, post_type='job'   |
-| Metadata (extra job details)     | job_location, salary, company_name, job_type (likely in `job4U_postmeta`) |
-| Saved jobs                       | Potentially tracked via `postmeta` or a custom saved_jobs table (not yet seen) |
+| Job listings                     | ID (post ID), post_title, post_content, post_date, post_type='job'   |
+| extra job details                | job_location, salary, company_name, job_type                         |
+| Saved jobs                       | Potentially tracked  or a custom saved_jobs table (not yet seen)     |
 
 ---
 
